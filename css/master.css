@@ -1,0 +1,333 @@
+/* start a variables */
+/* main and secondary colors and fonts */
+/* end a variables */
+/* start components */
+/* the repeating things */
+/* end components */
+/* start global value */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end global value */
+
+/* start header  */
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-1 a img {
+  width: 250px;
+}
+.nav {
+  width: 30%;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+@media(max-width:768px) {
+  .nav ul {
+    flex-direction: column;
+  }
+}
+.nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #ababab;
+}
+.nav ul li a:hover {
+  color: #00b39b;
+}
+.nav ul li a.active {
+  color: #00b39b;
+}
+/* end header  */
+
+/* start first section */
+
+.sec-1 {
+  margin-top: 100px;
+}
+.sec-1 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec-1 .container img {
+  width: 60px;
+}
+.sec-1 .container > p {
+  font-size: 30px;
+  letter-spacing: 2;
+  word-spacing: 3;
+  color: #00b39b;
+}
+.sec-1 .container .text {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width:768px) {
+  .sec-1 .container .text {
+    flex-direction: column;
+    align-items: center;
+    width: 150%;
+  }
+}
+.sec-1 .container .text p {
+  width: 30%;
+  color: #ababab;
+  line-height: 2;
+}
+/* end first section */
+
+/* start second section */
+.sec-2 {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.sec-2 .container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+@media (max-width:768px) {
+  .sec-2 .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.sec-2 .container > div {
+  color: white;
+  padding: 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.sec-2 .container .card-1 {
+  background-color: #00ccb1;
+}
+.sec-2 .container .card-2 {
+  background-color: #3d83df;
+}
+.sec-2 .container .card-3 {
+  background-color: #1b2734;
+}
+.sec-2 .container div .first i {
+  font-size: 25px;
+  padding-bottom: 15px;
+}
+.sec-2 .container div .first h2 {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 40px;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+.sec-2 .container div .first p {
+  font-size: 25px;
+}
+.sec-2 .container div form {
+  display: flex;
+  flex-direction: column;
+}
+.sec-2 .container div form label {
+  font-size: 23px;
+}
+.sec-2 .container .card-1 form select,
+.sec-2 .container .card-2 form select,
+.sec-2 .container .card-3 form select {
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  padding-bottom: 12px;
+  color: white;
+}
+.sec-2 .container .card-1 form select {
+  background-color: #00ccb1;
+}
+.sec-2 .container .card-2 form select {
+  background-color: #3d83df;
+}
+.sec-2 .container .card-3 form select {
+  background-color: #1b2734;
+}
+/* end second section */
+
+/* start third section */
+.sec-3 {
+  margin-bottom: 100px;
+}
+.sec-3 .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width:768px) {
+  .sec-3 .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.sec-3 .container .text p {
+  font-size: 30px;
+  max-width: 40%;
+  margin: auto;
+  color: #00ccb1;
+  line-height: 1.6;
+}
+.sec-3 .container .logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 30px;
+  width: 50%;
+}
+.sec-3 .container .logos img {
+  width: 100px;
+}
+.sec-3 .container .logos .moved {
+  position: relative;
+  top: -42px;
+}
+/* end third section */
+
+/* start fourth section */
+.sec-4 {
+  background-color: #d0faf4;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+}
+.sec-4 .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width:768px) {
+  .sec-4 .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec-4 .container .part-1 img {
+    width: 200px !important;
+  }
+}
+.sec-4 .container .part-1 {
+  width: 100%;
+  position: relative;
+  height: 600px;
+}
+.sec-4 .container .part-1 h2 {
+  margin: 0;
+  font-size: 35px;
+  font-weight: 500;
+  color: #00ccb1;
+  margin-bottom: 30px;
+}
+.sec-4 .container .part-1 p {
+  color: #747474;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+.sec-4 .container .part-1 img {
+  position: absolute;
+  bottom: 0;
+  width: 500px;
+  left: -75px;
+}
+.sec-4 .container .part-2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: 40px;
+}
+.sec-4 .container .part-2 div {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.sec-4 .container .part-2 div h2 {
+  color: #00b39b;
+  font-weight: 100;
+  font-size: 25px;
+}
+.sec-4 .container .part-2 div p {
+  color: #747474;
+  font-size: 12px;
+}
+/* end fourth section */
+
+/* start fifth section */
+.sec-5 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.sec-5 .container {
+  text-align: center;
+}
+.sec-5 .container h2 {
+  color: #00ccb1;
+}
+.sec-5 .container p {
+  color: #747474;
+}
+/* start fifth section */
+
+/* start sixth section */
+.sec-6 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.sec-6 .container .imgs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+.sec-6 .container .imgs-container .box .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 68%;
+}
+.sec-6 .container .imgs-container .box .text a {
+  text-decoration: none;
+  color: white;
+  background-color: #000;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: 600;
+}
+/* end sixth section */
